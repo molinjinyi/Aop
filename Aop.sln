@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{369DCC5B-258B-40AE-95ED-F050055F2483}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C10C799B-B608-4EC3-B213-BA0D4FB5CA85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{80BC0540-C89C-4245-ABC5-A20EDD5733C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ada.Aop.Logging.Web", "src\Logging\Ada.Aop.Logging.Web\Ada.Aop.Logging.Web.csproj", "{ACD29334-555D-48B1-9FB5-70A683C37B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ada.Aop.Logging.Console", "src\Logging\Ada.Aop.Logging.Console\Ada.Aop.Logging.Console.csproj", "{B5D6EF56-B82C-4D76-8842-EB54B422F675}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACD29334-555D-48B1-9FB5-70A683C37B6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD29334-555D-48B1-9FB5-70A683C37B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD29334-555D-48B1-9FB5-70A683C37B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD29334-555D-48B1-9FB5-70A683C37B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5D6EF56-B82C-4D76-8842-EB54B422F675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D6EF56-B82C-4D76-8842-EB54B422F675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D6EF56-B82C-4D76-8842-EB54B422F675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D6EF56-B82C-4D76-8842-EB54B422F675}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80BC0540-C89C-4245-ABC5-A20EDD5733C1} = {369DCC5B-258B-40AE-95ED-F050055F2483}
+		{ACD29334-555D-48B1-9FB5-70A683C37B6B} = {80BC0540-C89C-4245-ABC5-A20EDD5733C1}
+		{B5D6EF56-B82C-4D76-8842-EB54B422F675} = {80BC0540-C89C-4245-ABC5-A20EDD5733C1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DE146FC-8290-4AFE-873E-1075E5B9608A}
+	EndGlobalSection
+EndGlobal
