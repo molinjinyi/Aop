@@ -13,6 +13,8 @@ namespace Ada.SampleB.API
     {
         public static void Main(string[] args)
         {
+            var logger = NLog.Web.NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+            logger.Info("init main");
             CreateHostBuilder(args).Build().Run();
         }
 
@@ -24,7 +26,7 @@ namespace Ada.SampleB.API
                 }).ConfigureLogging(logging =>
                 {
                     logging.ClearProviders();
-                    logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
-                }).UseNLog();
+                    logging.SetMinimumLevel(LogLevel.Trace);
+                }).UseWebNLog();
     }
 }

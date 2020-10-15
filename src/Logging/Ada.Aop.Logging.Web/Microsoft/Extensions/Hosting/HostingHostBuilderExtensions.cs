@@ -7,7 +7,12 @@ namespace Microsoft.Extensions.Hosting
 {
     public static class HostingHostBuilderExtensions
     {
-        public static IHostBuilder UseNLog(this IHostBuilder hostBuilder)
+        /// <summary>
+        /// https://github.com/NLog/NLog/wiki/Getting-started-with-ASP.NET-Core-3
+        /// </summary>
+        /// <param name="hostBuilder"></param>
+        /// <returns></returns>
+        public static IHostBuilder UseWebNLog(this IHostBuilder hostBuilder)
         {
             hostBuilder.UseNLog();
             return hostBuilder;
