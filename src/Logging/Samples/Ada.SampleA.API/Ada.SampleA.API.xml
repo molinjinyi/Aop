@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ada.SampleA.API</name>
+    </assembly>
+    <members>
+        <member name="M:Ada.SampleA.API.Controllers.V1.WeatherForecastController.Get">
+            <summary>
+            說明 V1
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ada.SampleA.API.Controllers.V1.CodeEnum">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="F:Ada.SampleA.API.Controllers.V1.CodeEnum.A">
+            <summary>
+            AAAAA
+            </summary>
+        </member>
+        <member name="F:Ada.SampleA.API.Controllers.V1.CodeEnum.B">
+            <summary>
+            BBBB
+            </summary>
+        </member>
+        <member name="F:Ada.SampleA.API.Controllers.V1.CodeEnum.C">
+            <summary>
+            CCCC
+            </summary>
+        </member>
+        <member name="T:Ada.SampleA.API.Controllers.V1.Code">
+            <summary>
+            錯誤碼
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.Controllers.V1.Code.A">
+            <summary>
+            A狀態碼
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.Controllers.V1.Code.B">
+            <summary>
+            B狀態碼
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.Controllers.V1.Code.C">
+            <summary>
+            C狀態碼
+            </summary>
+        </member>
+        <member name="M:Ada.SampleA.API.Controllers.V2.WeatherForecastController.Get">
+            <summary>
+            說明 v2
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Ada.SampleA.API.Controllers.V2.CodeEnum">
+            <summary>
+            狀態碼
+            </summary>
+        </member>
+        <member name="F:Ada.SampleA.API.Controllers.V2.CodeEnum.A">
+            <summary>
+            AAAAA
+            </summary>
+        </member>
+        <member name="F:Ada.SampleA.API.Controllers.V2.CodeEnum.B">
+            <summary>
+            BBBB
+            </summary>
+        </member>
+        <member name="F:Ada.SampleA.API.Controllers.V2.CodeEnum.C">
+            <summary>
+            CCCC
+            </summary>
+        </member>
+        <member name="T:Ada.SampleA.API.Controllers.V2.Code">
+            <summary>
+            錯誤碼
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.Controllers.V2.Code.A">
+            <summary>
+            A狀態碼
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.Controllers.V2.Code.B">
+            <summary>
+            B狀態碼
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.Controllers.V2.Code.C">
+            <summary>
+            C狀態碼
+            </summary>
+        </member>
+        <member name="T:Ada.SampleA.API.WeatherForecast">
+            <summary>
+            天氣簡介
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.WeatherForecast.Date">
+            <summary>
+            日期  
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.WeatherForecast.TemperatureC">
+            <summary>
+            華氏
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.WeatherForecast.TemperatureF">
+            <summary>
+            攝氏
+            </summary>
+        </member>
+        <member name="P:Ada.SampleA.API.WeatherForecast.Summary">
+            <summary>
+            簡介
+            </summary>
+        </member>
+    </members>
+</doc>
