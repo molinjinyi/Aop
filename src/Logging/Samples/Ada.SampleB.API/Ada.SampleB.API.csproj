@@ -8,5 +8,9 @@
     <ProjectReference Include="..\..\Ada.Aop.Logging.Web\Ada.Aop.Logging.Web.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Core\" />
+  </ItemGroup>
+
 
 </Project>

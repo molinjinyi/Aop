@@ -28,6 +28,8 @@ namespace Ada.SampleB.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton<Customer>();
+            services.AddSingleton<CustomerService>(); 
             services.AddLocalization(options => options.ResourcesPath = "Resources");
            
         }

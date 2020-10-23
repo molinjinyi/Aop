@@ -16,17 +16,22 @@ namespace Ada.SampleB.API.Controllers
     {
         private readonly IStringLocalizer<InfoController> _localizer;
         private readonly IStringLocalizer<SharedResource> _sharedLocalizer;
+        private readonly CustomerService _customerService;
+
         public InfoController(IStringLocalizer<InfoController> localizer,
-                   IStringLocalizer<SharedResource> sharedLocalizer)
+                   IStringLocalizer<SharedResource> sharedLocalizer,CustomerService customerService)
         {
             _localizer = localizer;
             _sharedLocalizer = sharedLocalizer;
+            _customerService = customerService;
         }
         // GET: api/<InfoController>
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2", _localizer["Hello!"], _sharedLocalizer["Hello!"] };
+          var  customer=  _customerService.GetCustomer();
+            var customer1 = _customerService.GetCustomer();
+            return new string[] { "value1", "value2", _localizer["Hello!"], _sharedLocalizer["Hello!"], customer.Name, customer.GetHashCode().ToString(), customer1.GetHashCode().ToString() };
         }
 
         
