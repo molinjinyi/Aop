@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 
 namespace Ada.SampleB.API.Controllers
@@ -17,10 +18,12 @@ namespace Ada.SampleB.API.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IStringLocalizer<WeatherForecastController> _localizer;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IStringLocalizer<WeatherForecastController> localizer)
         {
             _logger = logger;
+            _localizer = localizer;
         }
 
         [HttpGet]
@@ -33,7 +36,7 @@ namespace Ada.SampleB.API.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
-                Summary = Summaries[rng.Next(Summaries.Length)]
+                Summary = Summaries[rng.Next(Summaries.Length)] + _localizer["Name"]
             })
             .ToArray();
         }

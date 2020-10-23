@@ -1,10 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,11 +23,13 @@ namespace Ada.SampleB.API
         }
 
         public IConfiguration Configuration { get; }
-
+        private const string enUSCulture = "en-US";
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -35,8 +39,13 @@ namespace Ada.SampleB.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            var supportedCultures = new[] { "en-US", "zh-CN" };
+            var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
+                .AddSupportedCultures(supportedCultures)
+                .AddSupportedUICultures(supportedCultures);
 
-            app.UseHttpsRedirection();
+            app.UseRequestLocalization(localizationOptions);
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
 
