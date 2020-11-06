@@ -8,7 +8,12 @@ namespace AsyncLocal.Test
     public class TestAsyncLocal
     {
         public static TestAsyncLocal Instance = new TestAsyncLocal();
-        private AsyncLocal<string> _asyncLocalString = new AsyncLocal<string>();
+        private AsyncLocal<string> _asyncLocalString = new AsyncLocal<string>((c) => {
+            Console.WriteLine("PreviousValue:{1},CurrentValue:{0},ThreadContextChanged:{2}", c.CurrentValue, c.PreviousValue, c.ThreadContextChanged);
+            Console.WriteLine("   CurrentCulture:{0},CurrentUICulture:{1},ManagedThreadId:{2},IsBackground:{3},IsThreadPoolThread:{4}",
+                              Thread.CurrentThread.CurrentCulture,
+                             Thread.CurrentThread.CurrentUICulture, Thread.CurrentThread.ManagedThreadId, Thread.CurrentThread.IsBackground, Thread.CurrentThread.IsThreadPoolThread);
+        });
 
         public string NormalString { get; set; }
 
@@ -20,6 +25,7 @@ namespace AsyncLocal.Test
 
         public void SetAsyncLocalString(string value)
         {
+            ExecutionContext ec = ExecutionContext.Capture();
             _asyncLocalString.Value = value;
         }
     }
