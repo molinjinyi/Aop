@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ada.SampleA.API", "src\Logg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ada.SampleB.API", "src\Logging\Samples\Ada.SampleB.API\Ada.SampleB.API.csproj", "{61763032-B233-4319-809A-6EE8BAF0006C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncLocal.Test", "test\AsyncLocal.Test\AsyncLocal.Test.csproj", "{3612BFDD-F156-40D8-AE0B-27C2FA6A6154}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncLocal.Test", "test\AsyncLocal.Test\AsyncLocal.Test.csproj", "{3612BFDD-F156-40D8-AE0B-27C2FA6A6154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandler", "test\ExceptionHandler\ExceptionHandler.csproj", "{D56265DB-19CC-4A99-BB27-51CC998FE7D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +61,10 @@ Global
 		{3612BFDD-F156-40D8-AE0B-27C2FA6A6154}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3612BFDD-F156-40D8-AE0B-27C2FA6A6154}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3612BFDD-F156-40D8-AE0B-27C2FA6A6154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56265DB-19CC-4A99-BB27-51CC998FE7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56265DB-19CC-4A99-BB27-51CC998FE7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56265DB-19CC-4A99-BB27-51CC998FE7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56265DB-19CC-4A99-BB27-51CC998FE7D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{CE6E48E0-BD4A-4C8F-BDE8-94419F03CB00} = {000B051D-BB20-464F-98DD-6A2221F94C21}
 		{61763032-B233-4319-809A-6EE8BAF0006C} = {000B051D-BB20-464F-98DD-6A2221F94C21}
 		{3612BFDD-F156-40D8-AE0B-27C2FA6A6154} = {C10C799B-B608-4EC3-B213-BA0D4FB5CA85}
+		{D56265DB-19CC-4A99-BB27-51CC998FE7D6} = {C10C799B-B608-4EC3-B213-BA0D4FB5CA85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DE146FC-8290-4AFE-873E-1075E5B9608A}
