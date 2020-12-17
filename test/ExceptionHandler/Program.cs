@@ -8,7 +8,7 @@ namespace ExceptionHandler
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
             var services = new ServiceCollection();
             services.AddSingleton<IExceptionHandler<DaoException>, DaoExceptionHandler>();
             services.AddSingleton<IExceptionHandler<ServiceException>, ServiceExceptionHandler>();
