@@ -4,6 +4,12 @@ using System.Threading.Tasks;
 
 class MultiplyMatrices
 {
+    /// <summary>
+    /// https://docs.microsoft.com/zh-cn/dotnet/standard/parallel-programming/how-to-write-a-simple-parallel-for-loop
+    /// </summary>
+    /// <param name="matA"></param>
+    /// <param name="matB"></param>
+    /// <param name="result"></param>
     #region Sequential_Loop
     static void MultiplyMatricesSequential(double[,] matA, double[,] matB,
                                             double[,] result)
