@@ -31,9 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskRunTest", "test\TaskRun
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelForTest", "test\ParallelForTest\ParallelForTest.csproj", "{EFC232FE-287F-4FE2-91D9-8EF23A116F1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationTokenTest", "test\CancellationTokenTest\CancellationTokenTest.csproj", "{90D59266-6DE2-4B15-BC73-A8CF79F5B330}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancellationTokenTest", "test\CancellationTokenTest\CancellationTokenTest.csproj", "{90D59266-6DE2-4B15-BC73-A8CF79F5B330}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueWorkItemTest", "test\QueueWorkItemTest\QueueWorkItemTest.csproj", "{8F5F7086-081D-4AF1-BAF4-76A478D9F08C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueWorkItemTest", "test\QueueWorkItemTest\QueueWorkItemTest.csproj", "{8F5F7086-081D-4AF1-BAF4-76A478D9F08C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerTest", "test\TimerTest\TimerTest.csproj", "{2AC3A26D-DC19-4584-A60A-75C634772504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{8F5F7086-081D-4AF1-BAF4-76A478D9F08C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F5F7086-081D-4AF1-BAF4-76A478D9F08C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F5F7086-081D-4AF1-BAF4-76A478D9F08C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC3A26D-DC19-4584-A60A-75C634772504}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC3A26D-DC19-4584-A60A-75C634772504}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC3A26D-DC19-4584-A60A-75C634772504}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC3A26D-DC19-4584-A60A-75C634772504}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +114,7 @@ Global
 		{EFC232FE-287F-4FE2-91D9-8EF23A116F1D} = {C10C799B-B608-4EC3-B213-BA0D4FB5CA85}
 		{90D59266-6DE2-4B15-BC73-A8CF79F5B330} = {C10C799B-B608-4EC3-B213-BA0D4FB5CA85}
 		{8F5F7086-081D-4AF1-BAF4-76A478D9F08C} = {C10C799B-B608-4EC3-B213-BA0D4FB5CA85}
+		{2AC3A26D-DC19-4584-A60A-75C634772504} = {C10C799B-B608-4EC3-B213-BA0D4FB5CA85}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0DE146FC-8290-4AFE-873E-1075E5B9608A}
