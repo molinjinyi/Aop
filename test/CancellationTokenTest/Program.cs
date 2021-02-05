@@ -9,8 +9,12 @@ public class Example
     {
         // Define the cancellation token.
         CancellationTokenSource source = new CancellationTokenSource();
+       
         CancellationToken token = source.Token;
-
+        var cancellationTokenRegistration = token.Register(() =>
+        {
+            Console.WriteLine("cancellationTokenRegistration");
+        });
         Random rnd = new Random();
         Object lockObj = new Object();
 
