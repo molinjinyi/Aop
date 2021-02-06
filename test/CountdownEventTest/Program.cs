@@ -8,6 +8,20 @@ namespace CountdownEventTest
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(Guid.NewGuid().ToString("N")); //"N", "D", "B", "P", or "X"
+            Console.WriteLine(Guid.NewGuid().ToString("D"));
+            Console.WriteLine(Guid.NewGuid().ToString("B"));
+            Console.WriteLine(Guid.NewGuid().ToString("P"));
+            Console.WriteLine(Guid.NewGuid().ToString("X"));
+            Console.WriteLine(Guid.NewGuid().ToString(""));
+            Console.WriteLine(Guid.NewGuid().ToString());
+            var student = new Student {
+                Id = 1,
+                Name = "jini"
+            };
+            Console.WriteLine(student.Name);
+            Change(student);
+            Console.WriteLine(student.Name);
             AutoResetEvent autoResetEvent = new AutoResetEvent(false);
             CountdownEvent cde = new CountdownEvent(3); // initial count = 10000
             int count = 0;
@@ -26,7 +40,23 @@ namespace CountdownEventTest
             Task t2 = Task.Factory.StartNew(consumer);
             Task t3 = Task.Factory.StartNew(consumer);
             cde.Wait();
-            autoResetEvent.WaitOne();
+            //autoResetEvent.WaitOne();
         }
+
+        public static void Change(Student student)
+        {
+            student.Name = "wj";
+            Console.WriteLine(student.Name);
+            student = new Student {
+                Name = "www",
+                 Id=2
+            }; 
+            Console.WriteLine(student.Name);
+        }
+    }
+    public class Student {
+     public int Id { get; set; }
+
+        public string Name { get; set; }
     }
 }
